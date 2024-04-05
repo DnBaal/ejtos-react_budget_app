@@ -12,16 +12,21 @@ const Currency = () => {
     }
 
     return (
-        <div className="alert alert-secondary">Currency {
-            <select name="Currency" id="Currency" onChange={event => changeCurrency(event.target.value)}>
+        <div className="dropdown-button-wrapper">
+            <span className="dropdown-button-text">Currency:</span>
+            <select
+                id="cars"
+                className="btn btn-secondary dropdown-toggle"
+                style={{ backgroundColor: "#80e188", color: "black", textAlign: "", width: "250px" }}
+                onChange={event => changeCurrency(event.target.value)}
+            >
                 <option value="$">$ Dollar</option>
                 <option value="£">£ Pound</option>
                 <option value="€">€ Euro</option>
                 <option value="₹">₹ Ruppee</option>
             </select>
-            }
-        </div>
+        </div> 
     );
-};
+}
 
 export default Currency;

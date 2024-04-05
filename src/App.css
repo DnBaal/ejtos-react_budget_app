@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+.dropdown-button-wrapper {
+    position: relative;  
+    display: inline-block;
+}
+  
+.dropdown-button-text {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    
+    color: black;
+    pointer-events: none;
+}
+
+
+.dropdown-menu {  
+    text-align: left;  
+}
+
+  
